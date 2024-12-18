@@ -1,0 +1,126 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+
+/* Additional styles */
+/* Additional styles */
+@import "additional-styles/utility-patterns.css";
+@import "additional-styles/theme.css";
+
+@import "tailwindcss/utilities";
+
+/* SLICK  */
+.slick-prev,
+.slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 40% !important;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.slick-next {
+  right: -70px !important;
+}
+
+.slick-prev {
+  left: -60px !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-family: 'slick';
+  font-size: 17px;
+  line-height: 1;
+  opacity: .75;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media only screen and (max-width: 1500px) {
+  .slick-arrow {
+    display: none!important;
+  }
+}
+
+.imageContainer {
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+}
+
+.imageContainer Image {
+  width: 100%;
+  vertical-align: top;
+}
+
+.imageContainer:after {
+  content: '\A';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  border-radius: 20px;
+}
+
+.imageContainer:hover:after {
+  opacity: 1;
+}
+
+.imageContainer:hover>a>button {
+  display: block;
+}
+
+.manage > div:nth-child(2) {
+  background-color: #00224A!important;
+  color: #ffffff;
+}
+
+.manage > div:nth-child(2) button {
+  color: #ffffff;
+}
+
+.manage > div:nth-child(2) h3 {
+  color: #747474;
+}
+
+.border-gradient {
+  position: relative; /* Required for pseudo-element positioning */
+  border-radius: 1.5rem; /* Matches the rounded-3xl class */
+  background: rgba(241, 241, 241, 0.05); /* Light grey for content background */
+}
+
+.border-gradient::before {
+  content: '';
+  position: absolute;
+  top: -4px; /* Matches border width */
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  z-index: -1; /* Places it behind the content */
+  border-radius: inherit; /* Ensures consistent border rounding */
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.8)
+  );
+  mask: radial-gradient(circle, transparent 30%, black 80%);
+  -webkit-mask: radial-gradient(circle, transparent 40%, black 80%);
+  pointer-events: none; /* Prevents interaction with the pseudo-element */
+}
