@@ -132,19 +132,19 @@ export default function Footer({ border = false }: { border?: boolean }) {
                 </Link>
               </li>
               <li>
-                <Link
-                  className="flex items-center justify-center text-orange-300 transition hover:text-orange-600"
-                  href="#0"
-                  aria-label="Medium"
+              <Link
+                className="flex items-center justify-center text-orange-300 transition hover:text-orange-600"
+                href="https://www.linkedin.com" // Replace with your LinkedIn profile URL
+                aria-label="Linkedin"
+              >
+                <svg
+                  className="h-8 w-8 fill-current"
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <svg
-                    className="h-8 w-8 fill-current"
-                    viewBox="0 0 32 32"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M23 8H9a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1Zm-1.708 3.791-.858.823a.251.251 0 0 0-.1.241V18.9a.251.251 0 0 0 .1.241l.838.823v.181h-4.215v-.181l.868-.843c.085-.085.085-.11.085-.241v-4.887l-2.41 6.131h-.329l-2.81-6.13V18.1a.567.567 0 0 0 .156.472l1.129 1.37v.181h-3.2v-.181l1.129-1.37a.547.547 0 0 0 .146-.472v-4.749a.416.416 0 0 0-.138-.351l-1-1.209v-.181H13.8l2.4 5.283 2.122-5.283h2.971l-.001.181Z"></path>
-                  </svg>
-                </Link>
+                  <path d="M20.448 0H3.552C2.645 0 2 0.645 2 1.552v20.896C2 23.355 2.645 24 3.552 24h16.896c.907 0 1.552-.645 1.552-1.552V1.552C22 0.645 21.355 0 20.448 0zm-9.584 18.24H7.477v-9.64h3.387v9.64zm-1.693-10.952c-1.137 0-1.926-.798-1.926-1.81 0-1.02.794-1.81 1.93-1.81 1.14 0 1.927.79 1.927 1.81 0 1.012-.794 1.81-1.926 1.81zM18.24 18.24h-3.387v-5.3c0-1.308-.46-2.206-1.615-2.206-.876 0-1.397.592-1.624 1.163-.084.205-.104.492-.104.777v5.567h-3.387v-9.64h3.387v1.306h.046c.454-.693 1.275-1.693 2.68-1.693 2.006 0 3.37 1.298 3.37 4.086v5.941z"></path>
+                </svg>
+              </Link>
               </li>
               <li>
                 <Link

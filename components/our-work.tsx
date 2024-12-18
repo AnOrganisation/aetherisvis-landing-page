@@ -12,7 +12,7 @@ interface DataType {
 const postData: DataType[] = [
     {
         heading: 'Interactive Gym Configurator',
-        imgSrc: '/images/Shot 8.jpeg',
+        imgSrc: '/images/Spx_Gym_Config.png',
     },
     {
         heading: 'Immersive 3D Home Tour',

@@ -34,10 +34,10 @@ const HowItWorks = () => {
     <section id="how-it-works" className="py-20 bg-gray-300">
       {/* Section Heading */}
       <div className="text-center mb-12">
-        <h2 className="text-4xl sm:text-5xl font-bold text-white">
+        <h2 className="text-4xl sm:text-5xl font-bold text-gray-900">
           Design Your Future, Your Way
         </h2>
-        <p className="mt-4 text-gray-400 text-lg">
+        <p className="mt-4 text-gray-700 text-lg">
           A simple step-by-step process to bring your vision to life.
         </p>
       </div>
@@ -54,13 +54,13 @@ const HowItWorks = () => {
               <img
                 src={step.icon}
                 alt={step.title}
-                className="w-16 h-16 object-contain"
+                className="w-20 h-16 object-contain" // Standardized icon size
               />
             </div>
             {/* Step Title */}
             <h3 className="text-2xl font-bold text-white mb-2">{step.title}</h3>
             {/* Step Description */}
-            <p className="text-white text-md">{step.description}</p>
+            <p className="text-gray-100 text-md">{step.description}</p>
           </div>
         ))}
       </div>
