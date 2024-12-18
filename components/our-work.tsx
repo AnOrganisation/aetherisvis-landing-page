@@ -28,6 +28,10 @@ const postData: DataType[] = [
     }
 ]
 
+interface MultipleItemsData {
+    id: string;
+}
+
 // CAROUSEL SETTINGS
 function SampleNextArrow(props: { className: any; style: any; onClick: any; }) {
     const { className, style, onClick } = props;
@@ -51,7 +55,7 @@ function SamplePrevArrow(props: { className: any; style: any; onClick: any; }) {
     );
 }
 
-const MultipleItems = () => {
+const MultipleItems = ({ id }: MultipleItemsData) => {
     const settings = {
         dots: false,
         infinite: true,
@@ -77,21 +81,21 @@ const MultipleItems = () => {
     };
 
     return (
-        <div id="featured-section" className="bg-white">
+        <div id={id} className="bg-white">
             <div className="mx-auto max-w-7xl sm:py-4 lg:px-8">
-                <div className="text-center pt-48 pb-10 md:pt-24">
-                    <h3 className="text-4xl sm:text-6xl font-bold text-orange-300 my-2">Featured works.</h3>
-                    <h3 className="text-4xl sm:text-6xl font-bold text-orange-300 text-opacity-50 lg:mr-48 my-2">Featured works.</h3>
-                    <h3 className="text-4xl sm:text-6xl font-bold text-orange-300 text-opacity-25 lg:-mr-32 my-2">Featured works.</h3>
+                <div className="pt-48 pb-10 text-center md:pt-24">
+                    <h3 className="my-2 text-4xl font-bold text-orange-300 sm:text-6xl">Featured works.</h3>
+                    <h3 className="my-2 text-4xl font-bold text-orange-300 text-opacity-50 sm:text-6xl lg:mr-48">Featured works.</h3>
+                    <h3 className="my-2 text-4xl font-bold text-orange-300 text-opacity-25 sm:text-6xl lg:-mr-32">Featured works.</h3>
                 </div>
 
                 <Slider {...settings}>
                     {postData.map((items, i) => (
                         <div key={i}>
-                            <div className="bg-transparent m-3 pb-12 my-10 rounded-3xl">
+                            <div className="pb-12 m-3 my-10 bg-transparent rounded-3xl">
                                 <Image src={items.imgSrc} alt="gaby" width={636} height={620} className="rounded-2xl" />
                                 <div className="w-345">
-                                    <h4 className="sm:text-5xl font-bold sm:pt-6 text-center sm:text-start mt-10 text-orange-300">{items.heading}</h4>
+                                    <h4 className="mt-10 font-bold text-center text-orange-300 sm:text-5xl sm:pt-6 sm:text-start">{items.heading}</h4>
                                 </div>
                             </div>
                         </div>

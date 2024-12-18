@@ -14,9 +14,9 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <FeaturesPlanet />
-      <OurWork />
-      <HowItWorks />
+      <FeaturesPlanet id="features" />
+      <OurWork id="features-section" />
+      <HowItWorks id="how-it-works" />
       <LargeTestimonial />
       <Cta />
     </>

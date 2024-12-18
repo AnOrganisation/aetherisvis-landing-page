@@ -29,36 +29,40 @@ const steps = [
   },
 ];
 
-const HowItWorks = () => {
+interface HowItWorksData {
+  id: string;
+}
+
+const HowItWorks = ({ id }: HowItWorksData) => {
   return (
-    <section id="how-it-works" className="py-20 bg-gray-300">
+    <section id={id} className="py-20 bg-gray-300">
       {/* Section Heading */}
-      <div className="text-center mb-12">
-        <h2 className="text-4xl sm:text-5xl font-bold text-gray-900">
+      <div className="mb-12 text-center">
+        <h2 className="text-4xl font-bold text-gray-900 sm:text-5xl">
           Design Your Future, Your Way
         </h2>
-        <p className="mt-4 text-gray-700 text-lg">
+        <p className="mt-4 text-lg text-gray-700">
           A simple step-by-step process to bring your vision to life.
         </p>
       </div>
 
       {/* Steps */}
-      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-6 lg:px-12">
+      <div className="container grid grid-cols-1 gap-8 px-6 mx-auto sm:grid-cols-2 lg:grid-cols-4 lg:px-12">
         {steps.map((step) => (
           <div
             key={step.id}
-            className="text-center bg-gray-400 rounded-xl p-6 shadow-lg"
+            className="p-6 text-center bg-gray-400 shadow-lg rounded-xl"
           >
             {/* Step Icon */}
             <div className="flex justify-center mb-4">
               <img
                 src={step.icon}
                 alt={step.title}
-                className="w-20 h-16 object-contain" // Standardized icon size
+                className="object-contain w-20 h-16" // Standardized icon size
               />
             </div>
             {/* Step Title */}
-            <h3 className="text-2xl font-bold text-white mb-2">{step.title}</h3>
+            <h3 className="mb-2 text-2xl font-bold text-white">{step.title}</h3>
             {/* Step Description */}
             <p className="text-gray-100 text-md">{step.description}</p>
           </div>

@@ -8,6 +8,10 @@
 
 @import "tailwindcss/utilities";
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* SLICK  */
 .slick-prev,
 .slick-next {
@@ -37,17 +41,17 @@
 
 .slick-prev:before,
 .slick-next:before {
-  font-family: 'slick';
+  font-family: "slick";
   font-size: 17px;
   line-height: 1;
-  opacity: .75;
+  opacity: 0.75;
   color: white;
   -webkit-font-smoothing: antialiased;
 }
 
 @media only screen and (max-width: 1500px) {
   .slick-arrow {
-    display: none!important;
+    display: none !important;
   }
 }
 
@@ -63,7 +67,7 @@
 }
 
 .imageContainer:after {
-  content: '\A';
+  content: "\A";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -80,12 +84,12 @@
   opacity: 1;
 }
 
-.imageContainer:hover>a>button {
+.imageContainer:hover > a > button {
   display: block;
 }
 
 .manage > div:nth-child(2) {
-  background-color: #00224A!important;
+  background-color: #00224a !important;
   color: #ffffff;
 }
 
@@ -104,7 +108,7 @@
 }
 
 .border-gradient::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -4px; /* Matches border width */
   left: -4px;

@@ -1,19 +1,15 @@
 import Image from "next/image";
-import PlanetImg from "@/public/images/planet.png";
-import PlanetOverlayImg from "@/public/images/planet-overlay.svg";
-import PlanetTagImg01 from "@/public/images/planet-tag-01.png";
-import PlanetTagImg02 from "@/public/images/planet-tag-02.png";
-import PlanetTagImg03 from "@/public/images/planet-tag-03.png";
-import PlanetTagImg04 from "@/public/images/planet-tag-04.png";
+interface FeaturesPlanetProps {
+  id: string;
+}
 
-
-export default function FeaturesPlanet() {
+export default function FeaturesPlanet({ id }: FeaturesPlanetProps) {
   return (
-    <section className="relative before:absolute before:inset-0 before:-z-20 before:bg-orange-300">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+    <section id={id} className="relative before:absolute before:inset-0 before:-z-20 before:bg-orange-300">
+      <div className="max-w-6xl px-4 mx-auto sm:px-6">
         <div className="py-12 md:py-20">
           {/* Section header */}
-          <div className="mx-auto max-w-3xl pb-16 text-center md:pb-20">
+          <div className="max-w-3xl pb-16 mx-auto text-center md:pb-20">
             <h2 className="text-3xl font-bold text-white md:text-4xl">
               Unmatched Quality Meets Seamless Interactivity
             </h2>
@@ -21,10 +17,10 @@ export default function FeaturesPlanet() {
           {/* Project Showcase */}
           <div className="pb-16 md:pb-20" data-aos="zoom-y-out">
             <div className="text-center">
-              <div className="relative inline-flex rounded-xl bg-white px-5 py-3 shadow-xl">
+              <div className="relative inline-flex px-5 py-3 bg-white shadow-xl rounded-xl">
                 <div className="flex justify-center py-5">
                   <img
-                    className="rounded-xl max-w-full h-auto"
+                    className="h-auto max-w-full rounded-xl"
                     src="/images/Shot 8.jpeg"
                     alt="Project 1"
                     width={600}
@@ -37,7 +33,7 @@ export default function FeaturesPlanet() {
           {/* Grid */}
           <div className="grid overflow-hidden sm:grid-cols-2 lg:grid-cols-3 [&>*]:relative [&>*]:p-6 [&>*]:before:absolute [&>*]:before:bg-white [&>*]:before:[block-size:100vh] [&>*]:before:[inline-size:1px] [&>*]:before:[inset-block-start:0] [&>*]:before:[inset-inline-start:-1px] [&>*]:after:absolute [&>*]:after:bg-white [&>*]:after:[block-size:1px] [&>*]:after:[inline-size:100vw] [&>*]:after:[inset-block-start:-1px] [&>*]:after:[inset-inline-start:0] md:[&>*]:p-10">
             <article>
-              <h3 className="mb-2 flex items-center space-x-2 font-medium text-white">
+              <h3 className="flex items-center mb-2 space-x-2 font-medium text-white">
                 <svg
                   className="fill-orange-500"
                   xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +49,7 @@ export default function FeaturesPlanet() {
               </p>
             </article>
             <article>
-              <h3 className="mb-2 flex items-center space-x-2 font-medium text-white">
+              <h3 className="flex items-center mb-2 space-x-2 font-medium text-white">
                 <svg
                   className="fill-orange-500"
                   xmlns="http://www.w3.org/2000/svg"
@@ -65,13 +61,13 @@ export default function FeaturesPlanet() {
                 <span>Interactive</span>
               </h3>
               <p className="text-[15px] text-white">
-              Bring products to life with real-time 3D visualizations that 
-              immerse customers in a dynamic, interactive environment, 
-              perfect for showcasing custom gym equipment and home designs.
+                Bring products to life with real-time 3D visualizations that
+                immerse customers in a dynamic, interactive environment,
+                perfect for showcasing custom gym equipment and home designs.
               </p>
             </article>
             <article>
-              <h3 className="mb-2 flex items-center space-x-2 font-medium text-white">
+              <h3 className="flex items-center mb-2 space-x-2 font-medium text-white">
                 <svg
                   className="fill-orange-500"
                   xmlns="http://www.w3.org/2000/svg"
@@ -91,7 +87,7 @@ export default function FeaturesPlanet() {
               </p>
             </article>
             <article>
-              <h3 className="mb-2 flex items-center space-x-2 font-medium text-white">
+              <h3 className="flex items-center mb-2 space-x-2 font-medium text-white">
                 <svg
                   className="fill-orange-500"
                   xmlns="http://www.w3.org/2000/svg"
@@ -107,7 +103,7 @@ export default function FeaturesPlanet() {
               </p>
             </article>
             <article>
-              <h3 className="mb-2 flex items-center space-x-2 font-medium text-white">
+              <h3 className="flex items-center mb-2 space-x-2 font-medium text-white">
                 <svg
                   className="fill-orange-500"
                   xmlns="http://www.w3.org/2000/svg"
@@ -125,7 +121,7 @@ export default function FeaturesPlanet() {
               </p>
             </article>
             <article>
-              <h3 className="mb-2 flex items-center space-x-2 font-medium text-white">
+              <h3 className="flex items-center mb-2 space-x-2 font-medium text-white">
                 <svg
                   className="fill-orange-500"
                   xmlns="http://www.w3.org/2000/svg"
@@ -137,9 +133,9 @@ export default function FeaturesPlanet() {
                 <span>Future-Ready Technology</span>
               </h3>
               <p className="text-[15px] text-white">
-              Leveraging cutting-edge 3D rendering tools, AetherisVis ensures seamless 
-              integration with modern web platforms, providing a scalable 
-              solution that adapts to evolving business needs.
+                Leveraging cutting-edge 3D rendering tools, AetherisVis ensures seamless
+                integration with modern web platforms, providing a scalable
+                solution that adapts to evolving business needs.
               </p>
             </article>
           </div>
