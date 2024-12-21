@@ -16,15 +16,15 @@ const postData: DataType[] = [
     },
     {
         heading: 'Immersive 3D Home Tour',
-        imgSrc: '/videos/Kitchen_Swap.gif',
+        imgSrc: '/videos/3DHome_Kitchen.gif',
     },
     {
-        heading: 'Immersive 3D Home Tours',
-        imgSrc: '/videos/Kitchen_Swap2.gif',
-    },
-    {
-        heading: 'Immersive 3D Home Tours',
+        heading: 'Immersive 3D Home Tour',
         imgSrc: '/images/Shot 8.jpeg',
+    },
+    {
+        heading: 'Immersive 3D Home Tour',
+        imgSrc: '/videos/Kitchen_Swap.gif',
     }
 ]
 

@@ -65,7 +65,7 @@ export default function HeroHome() {
           >
             <div className="relative px-5 py-3 bg-gray-900 shadow-xl aspect-video rounded-2xl">
               <img
-                src="/images/Shot 8.jpeg"
+                src="/videos/PCMockup_Montage.gif"
                 alt="AetherisVis Example"
                 className="w-full h-auto rounded-2xl"
               />
