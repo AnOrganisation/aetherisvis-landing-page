@@ -12,7 +12,7 @@ interface DataType {
 const postData: DataType[] = [
     {
         heading: 'Interactive Gym Configurator',
-        imgSrc: '/images/Spx_Gym_Config.png',
+        imgSrc: '/images/EQConf.gif',
     },
     {
         heading: 'Immersive 3D Home Tour',
@@ -93,7 +93,7 @@ const MultipleItems = ({ id }: MultipleItemsData) => {
                     {postData.map((items, i) => (
                         <div key={i}>
                             <div className="pb-12 m-3 my-10 bg-transparent rounded-3xl">
-                                <Image src={items.imgSrc} alt="gaby" width={636} height={620} className="rounded-2xl" />
+                                <Image src={items.imgSrc} alt="gaby" width={636} height={620} className="rounded-2xl" unoptimized />
                                 <div className="w-345">
                                     <h4 className="mt-10 font-bold text-center text-orange-300 sm:text-5xl sm:pt-6 sm:text-start">{items.heading}</h4>
                                 </div>

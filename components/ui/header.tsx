@@ -9,7 +9,7 @@ export default function Header() {
           {/* Site branding */}
           <div className="flex flex-row items-center flex-1">
             <Logo />
-            <p className="p-3 text-xl font-semibold">Aetheris Vis</p>
+            <p className="p-3 text-xl font-semibold">AetherisVis</p>
           </div>
 
           <div className="flex flex-row justify-between gap-4 p-3">

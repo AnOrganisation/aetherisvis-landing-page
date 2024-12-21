@@ -1,6 +1,6 @@
-import Image from "next/image";
+"use client";
 import PageIllustration from "@/components/page-illustration";
-
+import ReactPlayer from 'react-player';
 export default function HeroHome() {
   return (
     <section className="relative">
@@ -59,15 +59,17 @@ export default function HeroHome() {
           </div>
           {/* Hero image */}
           <div
-            className="max-w-3xl mx-auto"
+            className="max-w-5xl mx-auto"
             data-aos="zoom-y-out"
             data-aos-delay={600}
           >
-            <div className="relative px-5 py-3 bg-gray-900 shadow-xl aspect-video rounded-2xl">
-              <img
-                src="/videos/PCMockup_Montage.gif"
-                alt="AetherisVis Example"
-                className="w-full h-auto rounded-2xl"
+            <div className="shadow-xl aspect-video rounded-2xl h-[600px]">
+              <video
+                src="/videos/3DHome_Montage.mp4"
+                className="object-cover w-full h-full rounded-2xl"
+                autoPlay
+                muted
+                loop
               />
             </div>
           </div>
