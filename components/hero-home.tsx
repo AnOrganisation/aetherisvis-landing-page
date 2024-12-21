@@ -1,6 +1,5 @@
 "use client";
 import PageIllustration from "@/components/page-illustration";
-import ReactPlayer from 'react-player';
 export default function HeroHome() {
   return (
     <section className="relative">
