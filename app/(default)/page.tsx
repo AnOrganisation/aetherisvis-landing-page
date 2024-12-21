@@ -17,7 +17,6 @@ export default function Home() {
       <FeaturesPlanet id="features" />
       <OurWork id="features-section" />
       <HowItWorks id="how-it-works" />
-      <LargeTestimonial />
       <Cta />
     </>
   );
