@@ -15,7 +15,6 @@ export default function PageIllustration() {
           src={Stripes}
           width={768}
           alt="Stripes"
-          priority
         />
       </div>
       {/* Circles */}
