@@ -62,7 +62,7 @@ export default function HeroHome() {
             data-aos="zoom-y-out"
             data-aos-delay={600}
           >
-            <div className="shadow-xl aspect-video rounded-2xl h-[600px]">
+            <div className="shadow-xl aspect-video rounded-2xl">
               <video
                 src="/videos/3DHome_Montage.mp4"
                 className="object-cover w-full h-full rounded-2xl"
