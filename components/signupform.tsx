@@ -13,7 +13,11 @@ export default function SignupForm() {
           #mc_embed_signup {
             clear: left;
             font: 14px Helvetica, Arial, sans-serif;
-            width: 600px;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 15px;
+            box-sizing: border-box;
           }
           #mc_embed_signup h2, #mc_embed_signup label {
             color: white;
@@ -25,9 +29,11 @@ export default function SignupForm() {
             background-color: #fff;
             color: #000;
             border-radius: 12px;
-            padding: 10px;
+            padding: 12px;
             border: 1px solid #ccc;
-            font-size: 14px;
+            font-size: 16px;
+            width: 100%;
+            box-sizing: border-box;
           }
           #mc_embed_signup input::placeholder {
             color: #888;
@@ -43,9 +49,29 @@ export default function SignupForm() {
             font-size: 16px;
             cursor: pointer;
             display: inline-block;
+            width: 100%;
+            box-sizing: border-box;
           }
           #mc_embed_signup .button:hover {
             background-color: #f0f0f0;
+          }
+
+          /* Responsive Styles */
+          @media (max-width: 768px) {
+            #mc_embed_signup {
+              font-size: 14px;
+              padding: 10px;
+            }
+            #mc_embed_signup h2 {
+              font-size: 20px;
+            }
+            #mc_embed_signup input {
+              font-size: 14px;
+            }
+            #mc_embed_signup .button {
+              width: 50%;
+              font-size: 14px;
+             }
           }
         `}
       </style>
