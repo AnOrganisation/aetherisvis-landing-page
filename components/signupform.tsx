@@ -13,10 +13,9 @@ export default function SignupForm() {
           #mc_embed_signup {
             clear: left;
             font: 14px Helvetica, Arial, sans-serif;
-            width: 100%;
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 15px;
+            width: 500px;
+            max-width: 600px; /* Adjust container width for desktop screens */
+            margin: 0 auto; /* Center the form */
             box-sizing: border-box;
           }
           #mc_embed_signup h2, #mc_embed_signup label {
@@ -32,15 +31,17 @@ export default function SignupForm() {
             padding: 12px;
             border: 1px solid #ccc;
             font-size: 16px;
-            width: 100%;
+            width: 100%; /* Full width for smaller screens */
+            max-width: 400%; /* Use full width of the parent container */
             box-sizing: border-box;
+            margin: 0 auto; /* Center alignment */
           }
           #mc_embed_signup input::placeholder {
             color: #888;
           }
           #mc_embed_signup .button {
             background-color: #fff;
-            color: #ff6600; /* Tailwind's Orange-500 equivalent */
+            color: #ff6600;
             font-weight: bold;
             border: none;
             border-radius: 12px;
@@ -49,7 +50,8 @@ export default function SignupForm() {
             font-size: 16px;
             cursor: pointer;
             display: inline-block;
-            width: 100%;
+            width: 200px;
+            max-width: 200px;
             box-sizing: border-box;
           }
           #mc_embed_signup .button:hover {
@@ -61,17 +63,32 @@ export default function SignupForm() {
             #mc_embed_signup {
               font-size: 14px;
               padding: 10px;
+              width: 300px;
             }
             #mc_embed_signup h2 {
               font-size: 20px;
             }
-            #mc_embed_signup input {
+            #mc_embed_signup input, #mc_embed_signup .button {
+              font-size: 14px;
+              max-width: 100%;
+            }
+          }
+
+          @media (max-width: 480px) {
+            #mc_embed_signup {
+              padding: 8px;
+            }
+            #mc_embed_signup h2 {
+              font-size: 18px;
+              text-align: center;
+            }
+            #mc_embed_signup label {
               font-size: 14px;
             }
-            #mc_embed_signup .button {
-              width: 50%;
+            #mc_embed_signup input, #mc_embed_signup .button {
               font-size: 14px;
-             }
+              width: 150px;
+            }
           }
         `}
       </style>
