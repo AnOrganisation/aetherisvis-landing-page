@@ -73,6 +73,7 @@ export default function SignupForm() {
                 id="mce-EMAIL"
                 required
                 placeholder="Enter your email"
+                autoComplete="email"
               />
             </div>
             <div className="mc-field-group">
@@ -83,6 +84,7 @@ export default function SignupForm() {
                 className="text"
                 id="mce-FNAME"
                 placeholder="Enter your first name"
+                autoComplete="given-name"
               />
             </div>
             <div hidden>
