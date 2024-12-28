@@ -1,9 +1,8 @@
 import "./css/style.css";
-
 import { Inter } from "next/font/google";
-
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import AnalyticsProvider from "@/components/analytics-provider"; // Import AnalyticsProvider
 
 const inter = Inter({
   subsets: ["latin"],
@@ -23,25 +22,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <head>
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-7STZJDY5WS"
-        ></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-7STZJDY5WS');
-            `,
-          }}
-        ></script>
-      </head>
       <body
         className={`${inter.variable} bg-gray-50 font-inter tracking-tight text-gray-900 antialiased`}
       >
+        <AnalyticsProvider /> {/* Include AnalyticsProvider to track route changes */}
         <div className="flex min-h-screen flex-col overflow-hidden supports-[overflow:clip]:overflow-clip">
           {children}
         </div>
