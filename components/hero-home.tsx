@@ -36,16 +36,18 @@ export default function HeroHome() {
                   data-aos-delay={450}
                 >
                   <a
-                    className="btn group mb-4 w-full bg-gradient-to-t from-orange-500 to-orange-300 bg-[length:100%_100%] bg-[bottom] text-white shadow hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
-                    href="#0"
-                  >
-                    <span className="relative inline-flex items-center">
-                      Contact Us{" "}
-                      <span className="ml-1 tracking-normal text-white transition-transform group-hover:translate-x-0.5">
-                        -&gt;
+                      className="btn group mb-4 w-full bg-gradient-to-t from-orange-500 to-orange-300 bg-[length:100%_100%] bg-[bottom] text-white shadow hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
+                      href="https://calendar.app.google/EVUrh8LRSYLpYPkM6" // Updated link
+                      target="_blank" // Opens in a new tab
+                      rel="noopener noreferrer" // Ensures security for external links
+                    >
+                      <span className="relative inline-flex items-center">
+                        Contact Us{" "}
+                        <span className="ml-1 tracking-normal text-white transition-transform group-hover:translate-x-0.5">
+                          -&gt;
+                        </span>
                       </span>
-                    </span>
-                  </a>
+                    </a>
                   <a
                     className="w-full text-gray-800 bg-white shadow btn hover:bg-gray-50 sm:ml-4 sm:w-auto"
                     href="#features-section"
