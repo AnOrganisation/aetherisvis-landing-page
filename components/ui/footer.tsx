@@ -11,14 +11,18 @@ export default function Footer({ border = false }: { border?: boolean }) {
         >
           {/* 1st block */}
           <div className="space-y-2 sm:col-span-12 lg:col-span-4">
-            <div>
+            <div className="flex items-center space-x-4">
               <Logo />
+              <img 
+                src="/images/nvidia-inception-program-badge-rgb-for-screen.png" 
+                alt="NVIDIA Inception Program Badge" 
+                className="h-14"
+              />
             </div>
             <div className="text-sm text-gray-600">
               &copy; AetherisVis.com - All rights reserved.
             </div>
-          </div>
-
+            </div>
           {/* 2nd block */}
           <div className="space-y-2 sm:col-span-6 md:col-span-3 lg:col-span-2">
             <h3 className="text-sm font-medium">Product</h3>
