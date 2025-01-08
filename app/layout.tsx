@@ -2,7 +2,7 @@ import "./css/style.css";
 import { Inter } from "next/font/google";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import AnalyticsProvider from "@/components/analytics-provider"; // Import AnalyticsProvider
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -25,10 +25,10 @@ export default function RootLayout({
       <body
         className={`${inter.variable} bg-gray-50 font-inter tracking-tight text-gray-900 antialiased`}
       >
-        <AnalyticsProvider /> {/* Include AnalyticsProvider to track route changes */}
         <div className="flex min-h-screen flex-col overflow-hidden supports-[overflow:clip]:overflow-clip">
           {children}
         </div>
+        <Analytics />
       </body>
     </html>
   );
